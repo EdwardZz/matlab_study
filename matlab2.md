@@ -38,5 +38,13 @@
 	1、首先get(h)会返回线的特征  
 	2、其次根据想改变的东西设置set(h,'特征符号'，相应变化)  
 	3、gca边界 gcf图整体  
+- subplot(m,n,x)子图绘制，里面有m*n个图，当前绘制的图的序号为x
 - 保存图片 ：saveas(gcf,'<filename>','<格式>') 格式有：jpeg png tiff bmp/ pdf meta等
-
+## matlab彩图绘制
+- imagesc(z) 在将z与xy的关系定下来后，使用该命令可以将其变为彩色平面图
+- colorbar显示彩色对应的值
+- colormap(模式)修改对应的色系
+## matlab3D图形
+- meshgrid产生网格坐标 例：[x,y]=meshgrid(x,y)
+- contour(x,y,z)做3图的投影 contour(z,[-3.5:0.5:3.5])以0.5为等差序列画线 contourf(Z)填充颜色  
+		clabel标记线的值
