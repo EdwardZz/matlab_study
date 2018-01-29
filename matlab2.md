@@ -31,6 +31,9 @@
 ## matlab基础绘图
 - plot(x,y,'str')表示画出x,y坐标图，后面str为图中线的模式选择 [模式链接](http://cn.mathworks.com/help/matlab/ref/linespec.html;jsessionid=c7c31e941cf0370837d8ae2d6939)
 - legend（‘标记1’,'',''）可以在图上做标记
+- plot3(三个坐标)产生空间图形
+- title之类的修饰要放在画图命令后
+- 在使用plot的时候可以使用legend
 - 注意如果要在同一张图中显示多个结果，需要在显示函数两边加 hold on 和 hold off
 - 坐标注释：xlabel() ylabel() zlabel()（当图形为三维的时候才会使用zlabel）
 - 图名：title()
@@ -46,5 +49,6 @@
 - colormap(模式)修改对应的色系
 ## matlab3D图形
 - meshgrid产生网格坐标 例：[x,y]=meshgrid(x,y)
+- mesh(三个坐标)产生网格图
 - contour(x,y,z)做3图的投影 contour(z,[-3.5:0.5:3.5])以0.5为等差序列画线 contourf(Z)填充颜色  
 		clabel标记线的值
